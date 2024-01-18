@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="">
 <style>
 </style>
-<script src=""></script>
+<script src="knit-calc.js"></script>
 <body>
 
 
@@ -17,38 +17,39 @@
  <br>
  <h3><span>Yarn Suggested:</span></h3>
  <p>The length and weight of the pattern's <b>suggested yarn skein</b> should be entered here.</p>
- <p><form action="#">
-  <label for="weight">Weight:</label>
-    <select name="weight" id="weight">
-      <option value="grams" selected>Grams</option>
-      <option value="ounces">Ounces</option>
+ <p>
+  <form onsubmit="knit()">
+  <label for="weightSugg">Weight:</label>
+    <select name="weightSugg" id="suggestedWeightType">
+      <option value="gramsSugg" selected>Grams</option>
+      <option value="ouncesSugg">Ounces</option>
     </select>
-    <input type="text" id="weight" name="weight">
+    <input type="text" name="wtSugg" id="suggestedWeight">
     <br>
-    <label for="length">Length:</label>
-    <select name="length" id="length">
-      <option value="meters" selected>Meters</option>
-      <option value="yards">Yards</option>
+    <label for="lengthSugg">Length:</label>
+    <select name="lengthSugg" id="suggestedLengthType">
+      <option value="metersSugg" selected>Meters</option>
+      <option value="yardsSugg">Yards</option>
     </select>
-    <input type="text" id="length" name="length">
+    <input type="text" name="length" id="suggestedLength">
     <br>
     <br>
     <br>   
     <h3><span>Substituted Yarn:</span></h3>
     <p>The length and weight of the <b>new yarn skein</b> should be entered here.</p>
-  <label for="weight">Weight:</label>
-    <select name="weight" id="weight">
-      <option value="grams" selected>Grams</option>
-      <option value="ounces">Ounces</option>
+  <label for="weightSub">Weight:</label>
+    <select name="weightSub" id="substituedWeightType">
+      <option value="gramsSub" selected>Grams</option>
+      <option value="ouncesSub">Ounces</option>
     </select>
-    <input type="text" id="weight" name="weight">
+    <input type="text" name="wtSub" id="substitutedWeight">
     <br>
-    <label for="length">Length:</label>
-    <select name="length" id="length">
-      <option value="meters" selected>Meters</option>
-      <option value="yards">Yards</option>
+    <label for="lengthSub">Length:</label>
+    <select name="lengthSub" id="substitutedLengthType">
+      <option value="metersSub" selected>Meters</option>
+      <option value="yardsSub">Yards</option>
     </select>
-    <input type="text" id="length" name="length">
+    <input type="text" name="lenSub" id="substitutedLength">
     
     <button type="submit">Calculate</button>
     <button type="reset">Reset</button>
