@@ -13,9 +13,13 @@ function knit() {
     "substitutedLengthType"
   ).value;
   var suggestedWeight = document.getElementById("suggestedWeight").value;
+  var suggestedWeightNumber = parseFloat(suggestedWeight);
   var suggestedLength = document.getElementById("suggestedLength").value;
+  var suggestedLengthNumber = parseFloat(suggestedLength);
   var substitutedWeight = document.getElementById("substitutedWeight").value;
+  var substitutedWeightNumber = parseFloat(substitutedWeight);
   var substitutedLength = document.getElementById("substitutedLength").value;
+  var substitutedLengthNumber = parseFloat(substitutedLength);
 
   console.log("Data submitted: " + suggestedWeightType);
   console.log("Data submitted: " + suggestedLengthType);
