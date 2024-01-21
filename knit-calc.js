@@ -21,8 +21,12 @@ function knit() {
   var substitutedLength = document.getElementById("substitutedLength").value;
   var substitutedLengthNumber = parseFloat(substitutedLength);
 
-  console.log("Data submitted: " + suggestedWeightType);
-  console.log("Data submitted: " + suggestedLengthType);
-  console.log("Data submitted: " + substitutedWeightType);
-  console.log("Data submitted: " + substitutedLengthType);
+  console.log("Suggested Weight Type: " + suggestedWeightType);
+  console.log("Suggested Weight Number: " + suggestedWeightNumber);
+  console.log("Suggested Length Type: " + suggestedLengthType);
+  console.log("Suggested Length Number: " + suggestedLengthNumber);
+  console.log("Substituted Weight Type: " + substitutedWeightType);
+  console.log("Substituted Weight Number: " + substitutedWeightNumber);
+  console.log("Substituted Length Type: " + substitutedLengthType);
+  console.log("Substituted Length Number: " + substitutedLengthNumber);
 }
