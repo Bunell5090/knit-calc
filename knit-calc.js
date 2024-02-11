@@ -38,6 +38,7 @@ function knit() {
       (substitutedLengthNumber / substitutedWeightNumber) *
       suggestedLengthNumber;
     console.log("Answer:" + substitutedWeightAnswer);
+    if ()
   } else if (
     suggestedWeightType === substitutedWeightType &&
     suggestedLengthType != substitutedLengthType
