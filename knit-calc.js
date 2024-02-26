@@ -31,8 +31,8 @@ function knit() {
   console.log("Substituted Length Type: " + substitutedLengthType);
   console.log("Substituted Length Number: " + substitutedLengthNumber);
   if (
-    suggestedWeightType === substitutedWeightType &&
-    suggestedLengthType === substitutedLengthType
+    suggestedWeightType == "grams" && substitutedWeightType == "grams" &&
+    suggestedLengthType == "meters" && substitutedLengthType == "meters"
   ) {
     var substitutedWeightAnswer =
       (substitutedLengthNumber / substitutedWeightNumber) *
