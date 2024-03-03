@@ -39,11 +39,11 @@ function knit() {
 }
 */
 
-  if (suggestedweight == "ounces") {
+  if (suggestedWeight === "ounces") {
     tempSuggestedWeightNumber = suggestedWeightNumber * 28;
   }
 
-  if (substitutedweight == "ounces") {
+  if (substitutedWeight == "ounces") {
     tempSubstitutedWeightNumber = substitutedWeightNumber * 28;
   }
 
