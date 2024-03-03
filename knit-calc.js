@@ -30,28 +30,6 @@ function knit() {
   console.log("Substituted Weight Number: " + substitutedWeightNumber);
   console.log("Substituted Length Type: " + substitutedLengthType);
   console.log("Substituted Length Number: " + substitutedLengthNumber);
-  if (
-    suggestedWeightType == "grams" && substitutedWeightType == "grams" &&
-    suggestedLengthType == "meters" && substitutedLengthType == "meters"
-  ) {
-    var substitutedWeightAnswer =
-      (substitutedLengthNumber / substitutedWeightNumber) *
-      suggestedLengthNumber;
-    console.log("Answer:" + substitutedWeightAnswer);
-    if ()
-  } else if (
-    suggestedWeightType === substitutedWeightType &&
-    suggestedLengthType != substitutedLengthType
-  ) {
-  } else if (
-    suggestedWeightType != substitutedWeightType &&
-    suggestedLengthType === substitutedLengthType
-  ) {
-  } else if (
-    suggestedWeightType != substitutedWeightType &&
-    suggestedLengthType != substitutedLengthType
-  ) {
-  }
 
   console.log("Suggested Weight Type: " + suggestedWeightType);
   console.log("Suggested Weight Number: " + suggestedWeightNumber);
