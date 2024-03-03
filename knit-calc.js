@@ -56,3 +56,21 @@ if (suggestedLength == substitutedLength) {
   else
     return "The two yarns are not compatible.";
 }
+else if (suggestedLength == "meters" && substitutedLength == "yards") {
+        tempSubstitutedLengthNumber = substitutedLengthNumber / 1.094;
+        substitutedLengthNumberAnswer = (suggestedLengthNumber / tempSubstitutedLengthNumber) * suggestedWeightNumber;
+        if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
+          return "The two yarns are compatible.";
+        }
+        else
+          return "The two yarns are not compatible.";   
+}
+else if (suggestedLength == "yards" && substitutedLength == "meters") {
+  tempSubstitutedLengthNumber = substitutedLengthNumber * 1.094;
+  substitutedLengthNumberAnswer = (suggestedLengthNumber / tempSubstitutedLengthNumber) * suggestedWeightNumber;
+  if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
+    return "The two yarns are compatible.";
+  }
+  else
+    return "The two yarns are not compatible.";   
+}
