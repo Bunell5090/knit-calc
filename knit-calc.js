@@ -25,7 +25,10 @@ function knit() {
   var tempSuggestedLengthNumber = 0;
   var tempSubstitutedWeightNumber = 0;
   var tempSubstitutedLengthNumber = 0;
+  var substitutedLengthNumberAnswer = 0;
+  
 
+  /*
   console.log("Suggested Weight Type: " + suggestedWeightType);
   console.log("Suggested Weight Number: " + suggestedWeightNumber);
   console.log("Suggested Length Type: " + suggestedLengthType);
@@ -34,13 +37,22 @@ function knit() {
   console.log("Substituted Weight Number: " + substitutedWeightNumber);
   console.log("Substituted Length Type: " + substitutedLengthType);
   console.log("Substituted Length Number: " + substitutedLengthNumber);
+}
+*/
 
-  console.log("Suggested Weight Type: " + suggestedWeightType);
-  console.log("Suggested Weight Number: " + suggestedWeightNumber);
-  console.log("Suggested Length Type: " + suggestedLengthType);
-  console.log("Suggested Length Number: " + suggestedLengthNumber);
-  console.log("Substituted Weight Type: " + substitutedWeightType);
-  console.log("Substituted Weight Number: " + substitutedWeightNumber);
-  console.log("Substituted Length Type: " + substitutedLengthType);
-  console.log("Substituted Length Number: " + substitutedLengthNumber);
+if (suggestedweight == "ounces") {
+  tempSuggestedWeightNumber = suggestedWeightNumber * 28;
+}
+
+if (substitutedweight == "ounces") {
+  tempSubstitutedWeightNumber = substitutedWeightNumber * 28;
+}
+
+if (suggestedLength == substitutedLength) {
+  substitutedLengthNumberAnswer = (substitutedLengthNumber / substitutedWeightNumber) * suggestedWeightNumber;
+  if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
+    return "The two yarns are compatible.";
+  }
+  else
+    return "The two yarns are not compatible.";
 }
