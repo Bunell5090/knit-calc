@@ -21,6 +21,10 @@ function knit() {
   var substitutedLength = document.getElementById("substitutedLength").value;
   var substitutedLengthNumber = parseFloat(substitutedLength);
   var substitutedLengthAnswer = suggestedLengthNumber;
+  var tempSuggestedWeightNumber = 0;
+  var tempSuggestedLengthNumber = 0;
+  var tempSubstitutedWeightNumber = 0;
+  var tempSubstitutedLengthNumber = 0;
 
   console.log("Suggested Weight Type: " + suggestedWeightType);
   console.log("Suggested Weight Number: " + suggestedWeightNumber);
