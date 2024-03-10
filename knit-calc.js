@@ -1,5 +1,5 @@
 function knit() {
-  event.preventDefault();
+  //event.preventDefault();
   var suggestedWeightType = document.getElementById(
     "suggestedWeightType"
   ).value;
@@ -26,6 +26,7 @@ function knit() {
   var tempSubstitutedWeightNumber = 0;
   var tempSubstitutedLengthNumber = 0;
   var substitutedLengthNumberAnswer = 0;
+  var response = document.getElementById("answer");
 
   console.log("Suggested Weight Type: " + suggestedWeightType);
   console.log("Suggested Weight Number: " + suggestedWeightNumber);
@@ -49,8 +50,10 @@ function knit() {
       (substitutedLengthNumber / substitutedWeightNumber) *
       suggestedWeightNumber;
     if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
-      return "The two yarns are compatible.";
-    } else return "The two yarns are not compatible.";
+      response.innerHTML = "The two yarns are compatible.";
+    } else {
+      response.innerHTML = "The two yarns are not compatible.";
+    }
   } else if (
     suggestedLengthType == "meters" &&
     substitutedLengthType == "yards"
@@ -60,8 +63,10 @@ function knit() {
       (suggestedLengthNumber / tempSubstitutedLengthNumber) *
       suggestedWeightNumber;
     if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
-      return "The two yarns are compatible.";
-    } else return "The two yarns are not compatible.";
+      response.innerHTML = "The two yarns are compatible.";
+    } else {
+      response.innerHTML = "The two yarns are not compatible.";
+    }
   } else if (
     suggestedLengthType == "yards" &&
     substitutedLengthType == "meters"
@@ -71,8 +76,10 @@ function knit() {
       (suggestedLengthNumber / tempSubstitutedLengthNumber) *
       suggestedWeightNumber;
     if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
-      return "The two yarns are compatible.";
-    } else return "The two yarns are not compatible.";
+      response.innerHTML = "The two yarns are compatible.";
+    } else {
+      response.innerHTML = "The two yarns are not compatible.";
+    }
   }
 }
 
