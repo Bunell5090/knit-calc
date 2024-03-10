@@ -27,7 +27,6 @@ function knit() {
   var tempSubstitutedLengthNumber = 0;
   var substitutedLengthNumberAnswer = 0;
 
-  /*
   console.log("Suggested Weight Type: " + suggestedWeightType);
   console.log("Suggested Weight Number: " + suggestedWeightNumber);
   console.log("Suggested Length Type: " + suggestedLengthType);
@@ -36,8 +35,6 @@ function knit() {
   console.log("Substituted Weight Number: " + substitutedWeightNumber);
   console.log("Substituted Length Type: " + substitutedLengthType);
   console.log("Substituted Length Number: " + substitutedLengthNumber);
-}
-*/
 
   if (suggestedWeightType === "ounces") {
     tempSuggestedWeightNumber = suggestedWeightNumber * 28;
