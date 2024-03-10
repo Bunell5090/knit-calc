@@ -39,22 +39,25 @@ function knit() {
 }
 */
 
-  if (suggestedWeight === "ounces") {
+  if (suggestedWeightType === "ounces") {
     tempSuggestedWeightNumber = suggestedWeightNumber * 28;
   }
 
-  if (substitutedWeight == "ounces") {
+  if (substitutedWeightType == "ounces") {
     tempSubstitutedWeightNumber = substitutedWeightNumber * 28;
   }
 
-  if (suggestedLength == substitutedLength) {
+  if (suggestedLengthType == substitutedLengthType) {
     substitutedLengthNumberAnswer =
       (substitutedLengthNumber / substitutedWeightNumber) *
       suggestedWeightNumber;
     if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
       return "The two yarns are compatible.";
     } else return "The two yarns are not compatible.";
-  } else if (suggestedLength == "meters" && substitutedLength == "yards") {
+  } else if (
+    suggestedLengthType == "meters" &&
+    substitutedLengthType == "yards"
+  ) {
     tempSubstitutedLengthNumber = substitutedLengthNumber / 1.094;
     substitutedLengthNumberAnswer =
       (suggestedLengthNumber / tempSubstitutedLengthNumber) *
@@ -62,7 +65,10 @@ function knit() {
     if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
       return "The two yarns are compatible.";
     } else return "The two yarns are not compatible.";
-  } else if (suggestedLength == "yards" && substitutedLength == "meters") {
+  } else if (
+    suggestedLengthType == "yards" &&
+    substitutedLengthType == "meters"
+  ) {
     tempSubstitutedLengthNumber = substitutedLengthNumber * 1.094;
     substitutedLengthNumberAnswer =
       (suggestedLengthNumber / tempSubstitutedLengthNumber) *
