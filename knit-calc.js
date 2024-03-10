@@ -20,9 +20,9 @@ function knit() {
   var substitutedWeightNumber = parseFloat(substitutedWeight);
   var substitutedLength = document.getElementById("substitutedLength").value;
   var substitutedLengthNumber = parseFloat(substitutedLength);
-  var substitutedLengthAnswer = suggestedLengthNumber;
+  //var substitutedLengthAnswer = suggestedLengthNumber;
   var tempSuggestedWeightNumber = 0;
-  var tempSuggestedLengthNumber = 0;
+  //var tempSuggestedLengthNumber = 0;
   var tempSubstitutedWeightNumber = 0;
   var tempSubstitutedLengthNumber = 0;
   var substitutedLengthNumberAnswer = 0;
@@ -72,3 +72,6 @@ function knit() {
     } else return "The two yarns are not compatible.";
   }
 }
+
+//var result = knit();
+//document.getElementById("result").textContent = result;
