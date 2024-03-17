@@ -30,10 +30,14 @@ function knit() {
 
   if (suggestedWeightType === "ounces") {
     tempSuggestedWeightNumber = suggestedWeightNumber * 28;
+  } else if (suggestedWeightType === "grams") {
+    tempSuggestedWeightNumber = suggestedWeightNumber;
   }
 
-  if (substitutedWeightType == "ounces") {
+  if (substitutedWeightType === "ounces") {
     tempSubstitutedWeightNumber = substitutedWeightNumber * 28;
+  } else if (substitutedWeightType === "grams") {
+    tempSubstitutedWeightNumber = substitutedWeightNumber;
   }
 
   if (suggestedLengthType == substitutedLengthType) {
