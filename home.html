@@ -19,13 +19,6 @@
  <p>The length and weight of the pattern's <b>suggested yarn skein</b> should be entered here.</p>
  <p>
   <form onsubmit="knit()">
-  <label for="suggestedWeightType">Weight:</label>
-    <select name="weightSugg" id="suggestedWeightType">
-      <option value="grams" selected>Grams</option>
-      <option value="ounces">Ounces</option>
-    </select>
-    <input type="text" name="wtSugg" id="suggestedWeight">
-    <br>
     <label for="suggestedLengthType">Length:</label>
     <select name="lengthSugg" id="suggestedLengthType">
       <option value="meters" selected>Meters</option>
@@ -33,27 +26,34 @@
     </select>
     <input type="text" name="length" id="suggestedLength">
     <br>
+    <label for="suggestedWeightType">Weight:</label>
+    <select name="weightSugg" id="suggestedWeightType">
+      <option value="grams" selected>Grams</option>
+      <option value="ounces">Ounces</option>
+    </select>
+    <input type="text" name="wtSugg" id="suggestedWeight">
     <br>
     <br>   
     <h3><span>Substituted Yarn:</span></h3>
     <p>The length and weight of the <b>new yarn skein</b> should be entered here.</p>
-  <label for="substituedWeightType">Weight:</label>
-    <select name="weightSub" id="substituedWeightType">
-      <option value="grams" selected>Grams</option>
-      <option value="ounces">Ounces</option>
-    </select>
-    <input type="text" name="wtSub" id="substitutedWeight">
-    <br>
     <label for="substitutedLengthType">Length:</label>
     <select name="lengthSub" id="substitutedLengthType">
       <option value="meters" selected>Meters</option>
       <option value="yards">Yards</option>
     </select>
     <input type="text" name="lenSub" id="substitutedLength">
-    <div id="answer"></div>
+    <br>
+    <label for="substituedWeightType">Weight:</label>
+    <select name="weightSub" id="substituedWeightType">
+      <option value="grams" selected>Grams</option>
+      <option value="ounces">Ounces</option>
+    </select>
+    <input type="text" name="wtSub" id="substitutedWeight">
+    
     <button type="submit">Calculate</button>
     <button type="reset">Reset</button>
   </form>
+  <div id="answer"></div>
 </p>
  
 </div>

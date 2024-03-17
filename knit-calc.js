@@ -1,5 +1,5 @@
 function knit() {
-  //event.preventDefault();
+  event.preventDefault();
   var suggestedWeightType = document.getElementById(
     "suggestedWeightType"
   ).value;
@@ -27,15 +27,6 @@ function knit() {
   var tempSubstitutedLengthNumber = 0;
   var substitutedLengthNumberAnswer = 0;
   var response = document.getElementById("answer");
-
-  console.log("Suggested Weight Type: " + suggestedWeightType);
-  console.log("Suggested Weight Number: " + suggestedWeightNumber);
-  console.log("Suggested Length Type: " + suggestedLengthType);
-  console.log("Suggested Length Number: " + suggestedLengthNumber);
-  console.log("Substituted Weight Type: " + substitutedWeightType);
-  console.log("Substituted Weight Number: " + substitutedWeightNumber);
-  console.log("Substituted Length Type: " + substitutedLengthType);
-  console.log("Substituted Length Number: " + substitutedLengthNumber);
 
   if (suggestedWeightType === "ounces") {
     tempSuggestedWeightNumber = suggestedWeightNumber * 28;
@@ -81,7 +72,7 @@ function knit() {
       response.innerHTML = "The two yarns are not compatible.";
     }
   }
+  return;
 }
 
-//var result = knit();
 //document.getElementById("result").textContent = result;
