@@ -45,9 +45,27 @@ function knit() {
       (substitutedLengthNumber / tempSubstitutedWeightNumber) *
       tempSuggestedWeightNumber;
     if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
-      response.innerHTML = "The two yarns are compatible.";
+      response.innerHTML =
+        "The two yarns are compatible. " +
+        "The substitued yarn is equivalent to " +
+        Math.round(substitutedLengthNumberAnswer) +
+        " " +
+        suggestedLengthType +
+        " per " +
+        suggestedWeightNumber +
+        " " +
+        suggestedWeightType;
     } else {
-      response.innerHTML = "The two yarns are not compatible.";
+      response.innerHTML =
+        "The two yarns are not compatible. " +
+        "The substitued yarn is equivalent to " +
+        Math.round(substitutedLengthNumberAnswer) +
+        " " +
+        suggestedLengthType +
+        " per " +
+        suggestedWeightNumber +
+        " " +
+        suggestedWeightType;
     }
   } else if (
     suggestedLengthType == "meters" &&
@@ -58,9 +76,27 @@ function knit() {
       (tempSubstitutedLengthNumber / tempSubstitutedWeightNumber) *
       tempSuggestedWeightNumber;
     if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
-      response.innerHTML = "The two yarns are compatible.";
+      response.innerHTML =
+        "The two yarns are compatible. " +
+        "The substitued yarn is equivalent to " +
+        Math.round(substitutedLengthNumberAnswer) +
+        " " +
+        suggestedLengthType +
+        " per " +
+        suggestedWeightNumber +
+        " " +
+        suggestedWeightType;
     } else {
-      response.innerHTML = "The two yarns are not compatible.";
+      response.innerHTML =
+        "The two yarns are not compatible. " +
+        "The substitued yarn is equivalent to " +
+        Math.round(substitutedLengthNumberAnswer) +
+        " " +
+        suggestedLengthType +
+        " per " +
+        suggestedWeightNumber +
+        " " +
+        suggestedWeightType;
     }
   } else if (
     suggestedLengthType == "yards" &&
@@ -71,9 +107,27 @@ function knit() {
       (tempSubstitutedLengthNumber / tempSubstitutedWeightNumber) *
       tempSuggestedWeightNumber;
     if (Math.abs(suggestedLengthNumber - substitutedLengthNumberAnswer) <= 20) {
-      response.innerHTML = "The two yarns are compatible.";
+      response.innerHTML =
+        "The two yarns are compatible. " +
+        "The substitued yarn is equivalent to " +
+        Math.round(substitutedLengthNumberAnswer) +
+        " " +
+        suggestedLengthType +
+        " per " +
+        suggestedWeightNumber +
+        " " +
+        suggestedWeightType;
     } else {
-      response.innerHTML = "The two yarns are not compatible.";
+      response.innerHTML =
+        "The two yarns are not compatible. " +
+        "The substitued yarn is equivalent to " +
+        Math.round(substitutedLengthNumberAnswer) +
+        " " +
+        suggestedLengthType +
+        " per " +
+        suggestedWeightNumber +
+        " " +
+        suggestedWeightType;
     }
   }
   return;
